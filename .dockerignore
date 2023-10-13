@@ -1,0 +1,5 @@
+target
+go.mod
+go.sum
+main.go
+next/node_modules

@@ -1,0 +1,29 @@
+{
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^1.1.1",
+    "@astrojs/node": "^6.0.3",
+    "@astrojs/react": "^3.0.3",
+    "@mdx-js/mdx": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@mui/base": "^5.0.0-beta.19",
+    "@types/react": "^18.2.27",
+    "@types/react-dom": "^18.2.12",
+    "astro": "^3.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "mdx-bundler": "^9.2.1"
+  }
+}

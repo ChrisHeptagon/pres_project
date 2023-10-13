@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('/Georgia.woff2') format('woff2'),
+}
+
+@keyframes titleAnimation {
+    0% {transform: translateY(-100px);}
+    100% {transform: translateY(0px);}
+ 
+  }
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-family: 'Georgia';
+    animation-name: titleAnimation;
+    animation-duration: 4s;
+    
+}
