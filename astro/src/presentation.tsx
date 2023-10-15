@@ -61,6 +61,7 @@ function IndividualSlide({ currentSlide, slot, fetchedSlides }: { currentSlide: 
             Subtitle: (props: any) => ( <Subtitle {...props} />),
             IntroTransition: (props: any) => ( <IntroTransition {...props} />),
             SecondSlideTransition: (props: any) => ( <SecondSlideTransition {...props} />),
+            h1: (props: any) => ( <h1 className="generic-h1" {...props} />),
             }} />
         </div> 
           }
@@ -89,7 +90,9 @@ function IndividualSlide({ currentSlide, slot, fetchedSlides }: { currentSlide: 
     return (
     <>
     { Slides ? 
-    <div className={`slide ${currentSlide === slot ? "" : `${currentSlide === slot + 1 && isTransitioning ? "visible no-transition" : "hidden"}`}${currentSlide === slot && isTransitioning ? "transitioning" : ""}`} key={slot}>
+    <div className={`slide ${currentSlide === slot ? "" : 
+    `${currentSlide === slot + 1 && isTransitioning ? "visible no-transition outro-transition" : "hidden"}`}
+    ${currentSlide === slot && isTransitioning ? "transitioning" : ""}`} key={slot}>
     {Slides[slot - 1]}
     </div>
     : <p>Loading...</p> 

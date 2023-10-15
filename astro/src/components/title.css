@@ -28,9 +28,11 @@
 }
 
 .slide.transitioning .intro-transition {
-    animation-name: horizontalSlide;
+    animation-name: slideAnimation1;
     animation-duration: 1s;
 }
+
+
 
 
 
@@ -65,17 +67,35 @@
 }
 
 
-@keyframes slideAnimation1 {
+@keyframes secondSlideAnimation {
     0% {
         position: absolute;
         left: 0;
+        top: 50%;
+        opacity: 0;
+        transform: translateX(-100vw);
     }
     100% {
         position: absolute;
-        left: 50%;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transform: translateX(0);
     }
 }
+
 .second-slide-transition {
-    animation-name: slideAnimation1;
-    animation-duration: 3s;
+    animation-name: secondSlideAnimation;
+    animation-duration: 4s;
+}
+
+.generic-h1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
 }

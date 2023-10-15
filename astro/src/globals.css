@@ -74,15 +74,23 @@ body {
 
 }
 
-@keyframes horizontalSlide {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+.outro-transition {
+    animation-name: outroSlide;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
+@keyframes outroSlide {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        transform: translateX(-100vw);
+    }
+}
 
 .intro-transition {
     animation-name: horizontalSlide;
