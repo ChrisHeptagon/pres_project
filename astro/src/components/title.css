@@ -4,10 +4,15 @@
 }
 
 @keyframes titleAnimation {
-    0% {transform: translateY(-100px);}
-    100% {transform: translateY(0px);}
- 
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .title {
     font-size: 1.5rem;
@@ -20,4 +25,57 @@
     animation-name: titleAnimation;
     animation-duration: 4s;
     
+}
+
+.slide.transitioning .intro-transition {
+    animation-name: horizontalSlide;
+    animation-duration: 1s;
+}
+
+
+
+
+@font-face {
+    font-family: 'Gaborito', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Gabarito&family=Open+Sans&display=swap');
+}
+
+@keyframes subtitleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Gabarito', sans-serif;
+    animation-name: subtitleAnimation;
+    animation-duration: 4s;
+}
+
+
+@keyframes slideAnimation1 {
+    0% {
+        position: absolute;
+        left: 0;
+    }
+    100% {
+        position: absolute;
+        left: 50%;
+    }
+}
+.second-slide-transition {
+    animation-name: slideAnimation1;
+    animation-duration: 3s;
 }

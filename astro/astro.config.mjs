@@ -11,4 +11,9 @@ export default defineConfig({
     mode: 'standalone'
   }),
   integrations: [react(), mdx()],
+  vite: {
+    optimizeDeps: {
+      exclude: ['builtin-modules']
+    }
+  }
 });
